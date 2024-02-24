@@ -1,3 +1,75 @@
+.carousel-inner .carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-caption h3 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.carousel-caption {
+    Left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.carousel-caption h4 {
+    font-size: 30px;
+    color: #ccc;
+}
+
+.list-group a {
+    background: #ccc;
+    font-weight: bold;
+}
+
+.card .card-body .last {
+    color: white;
+}
+
+ .social-media ul {
+     list-style-type: none;
+     display: inline;
+     display: flex;
+     column-gap: 20px;
+     padding: 0;
+}
+
+.social-media ul li a {
+     text-decoration: none;
+     color: black;
+     font-size: 0;
+}
+
+.social-media i {
+    font-size: 16px;
+}
+
+.info {
+    background: #ccc;
+}
+
+.info h5 {
+    font-weight: 50;
+}
+
+.info h2 {
+    border-bottom: solid black;
+}
 
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+
+
+
+
