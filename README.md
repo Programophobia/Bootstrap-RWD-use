@@ -1,1 +1,1 @@
-https://bootstrap-anna-powaska.netlify.app/
+https://bootstrap-annapowaska.netlify.app/
