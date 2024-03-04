@@ -1,3 +1,9 @@
+/*Navbar*/
+
+.nav-btn {
+    margin-left: 60px;
+}
+
 .carousel-inner .carousel-item {
     height: 100vh;
 }
