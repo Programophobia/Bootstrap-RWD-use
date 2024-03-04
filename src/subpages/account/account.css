@@ -1,0 +1,68 @@
+/*Global*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*Navigation*/
+
+.navigation {
+    background-color: #0d6efd;
+    color:black;
+    padding: 12, 0;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color:black;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 36px 0 0;
+    position: relative;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.navigation li:hover {
+    color:azure;
+}
+
+.navigation ul li ul {
+    display: none;
+}
+
+.navigation li:hover ul {
+    display: block;
+    text-align: center;
+    background: #ccc;
+    color: black;
+}
+
+.navigation ul li ul {
+    position: absolute;
+}
+
+.navigation ul li ul li:hover {
+    background: none;
+    color: #E9967A;
+}
+
+.navigation ul li ul li {
+    display: block;
+    padding: 0 24px;
+}
+
+.navigation ul li ul {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 0 0 0;
+}
+
