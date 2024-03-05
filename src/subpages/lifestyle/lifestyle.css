@@ -1,0 +1,86 @@
+/*Global*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+   
+    color: black;
+}
+.container {
+    display: flex;
+    margin: 60px;
+    text-align: center;
+}
+
+.container-box {
+    flex: 1;
+    position: relative;
+    margin: 30px;
+    padding: 20px;
+}
+
+.words-absolute {
+    position: absolute;
+    font-size: 40px;
+    opacity: 0.5;
+    color:aquamarine;
+    top: 50%;
+    right: 50%;
+
+}
+
+/*Gallery*/
+
+/*Global*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*Gallery*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*PHOTOS*/
+.img-1 {background-image: url('../images/pexels-andrea-piacquadio-845434.jpg');}
+.img-2 {background-image: url('../images/pexels-andrea-piacquadio-994234.jpg');}
+.img-3 {background-image: url('../images/pexels-evg-kowalievska-1040173.jpg');}
+.img-4 {background-image: url('../images/pexels-godisable-jacob-794062.jpg');}
+.img-5 {background-image: url('../images/pexels-godisable-jacob-818992.jpg');}
+.img-6 {background-image: url('../images/pexels-spencer-selover-428340.jpg');}
+.img-7 {background-image: url('../images/pexels-godisable-jacob-965324.jpg');}
+.img-8 {background-image: url('../images/pexels-juan-mendez-1536619.jpg');}
+.img-9 {background-image: url('../images/pexels-lumn-322207.jpg');}
+.img-10 {background-image: url('../images/pexels-yuri-manei-2690323.jpg');}
+.img-11 {background-image: url('../images/pexels-snack-toronto-1630344.jpg');}
+.img-12 {background-image: url('../images/pexels-pixabay-247204.jpg');}
+
+/*CODE*/
+
+h1 {
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+.element {
+    margin: 2px;
+    border-radius: 2px;
+    background-position: center;
+    background-size: cover;
+}
+.inside-container, .flex-column, .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-1 {
+    flex: 1;
+}
+.element, .element-big {
+    height: 180px;
+}
+
+body .element:hover {
+    cursor: pointer;
+}
+
