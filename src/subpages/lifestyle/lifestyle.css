@@ -41,18 +41,18 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 /*PHOTOS*/
-.img-1 {background-image: url('../images/pexels-andrea-piacquadio-845434.jpg');}
-.img-2 {background-image: url('../images/pexels-andrea-piacquadio-994234.jpg');}
-.img-3 {background-image: url('../images/pexels-evg-kowalievska-1040173.jpg');}
-.img-4 {background-image: url('../images/pexels-godisable-jacob-794062.jpg');}
-.img-5 {background-image: url('../images/pexels-godisable-jacob-818992.jpg');}
-.img-6 {background-image: url('../images/pexels-spencer-selover-428340.jpg');}
-.img-7 {background-image: url('../images/pexels-godisable-jacob-965324.jpg');}
-.img-8 {background-image: url('../images/pexels-juan-mendez-1536619.jpg');}
-.img-9 {background-image: url('../images/pexels-lumn-322207.jpg');}
-.img-10 {background-image: url('../images/pexels-yuri-manei-2690323.jpg');}
-.img-11 {background-image: url('../images/pexels-snack-toronto-1630344.jpg');}
-.img-12 {background-image: url('../images/pexels-pixabay-247204.jpg');}
+.img-1 {background-image: url('../images/lifestyle/pexels-afta-putta-gunawan-1036804.jpg');}
+.img-2 {background-image: url('../images/lifestyle/pexels-amine-m\'siouri-2108845.jpg');}
+.img-3 {background-image: url('../images/lifestyle/pexels-cameron-casey-1152854.jpg');}
+.img-4 {background-image: url('../images/lifestyle/pexels-deepak-gautam-240163.jpg');}
+.img-5 {background-image: url('../images/lifestyle/pexels-elina-fairytale-3823086.jpg');}
+.img-6 {background-image: url('../images/lifestyle/pexels-jane-doan-2027696.jpg');}
+.img-7 {background-image: url('../images/lifestyle/pexels-lil-artsy-1925536.jpg');}
+.img-8 {background-image: url('../images/lifestyle/pexels-marek-mucha-2402799.jpg');}
+.img-9 {background-image: url('../images/lifestyle/pexels-marta-branco-1295572.jpg');}
+.img-10 {background-image: url('../images/lifestyle/pexels-nina-uhlikova-287240.jpg');}
+.img-11 {background-image: url('../images/lifestyle/pexels-pixabay-221210.jpg');}
+.img-12 {background-image: url('../images/lifestyle/pexels-pixabay-40720.jpg');}
 
 /*CODE*/
 
@@ -82,5 +82,13 @@ h1 {
 
 body .element:hover {
     cursor: pointer;
+}
+
+.font {
+    margin-top: 140px;
+    padding: 20px;
+    font-style:oblique;
+    font-size: 25px;
+    bottom: 0%;
 }
 
