@@ -17,7 +17,6 @@
 }
 .row {
 	display: flex;
-	border: 5px solid #d5d8d8;
 }
 
 .shadow-lg {
@@ -33,6 +32,13 @@
 }
 
 /*Gallery*/
+
+
+.w-100{
+    background-size: cover;
+}
+
+
 
 .img-1 {background-image: url('../images/pexels-andrea-piacquadio-845434.jpg');}
 .img-2 {background-image: url('../images/pexels-andrea-piacquadio-994234.jpg');}
