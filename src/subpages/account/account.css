@@ -65,3 +65,58 @@
     transform: translateX(-50%);
     padding: 12px 0 0 0;
 }
+
+/*Gallery*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*PHOTOS*/
+.img-1 {background-image: url('/static/lessons/1.jpg');}
+.img-2 {background-image: url('/static/lessons/2.jpg');}
+.img-3 {background-image: url('/static/lessons/3.jpg');}
+.img-4 {background-image: url('/static/lessons/4.jpg');}
+.img-5 {background-image: url('/static/lessons/5.jpg');}
+.img-6 {background-image: url('/static/lessons/6.jpg');}
+.img-7 {background-image: url('/static/lessons/7.jpg');}
+.img-8 {background-image: url('/static/lessons/8.jpg');}
+.img-9 {background-image: url('/static/lessons/9.jpg');}
+.img-10 {background-image: url('/static/lessons/10.jpg');}
+.img-11 {background-image: url('/static/lessons/11.jpg');}
+.img-12 {background-image: url('/static/lessons/12.jpg');}
+
+/*CODE*/
+body {
+    background: black;
+}
+h1 {
+    font-family: 'Open Sans', 'sans-serif';
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+.element {
+    height: 90px;
+    margin: 5px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+.inside-container, .flex-column, .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-1 {
+    flex: 1;
+}
+.element, .element-big {
+    height: 180px;
+}
+body:hover .element {
+    opacity: 0.3;
+}
+body .element:hover {
+    opacity: 1;
+    cursor: pointer;
+}
