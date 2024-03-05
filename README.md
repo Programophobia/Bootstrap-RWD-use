@@ -1,1 +1,1 @@
-https://bootstrap-annapowaska.netlify.app/
+https://bootstrap-flexbox-side-with-subpages.netlify.app/
