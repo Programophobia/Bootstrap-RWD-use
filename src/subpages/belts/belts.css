@@ -4,3 +4,26 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
+/*Gallery section*/
+
+.container {
+	width: 80%;
+	max-width: 900px;
+	padding: 20px;
+	box-shadow: 2px 2px 5px #444;
+	margin: 20px auto;
+    text-align: center;
+}
+.row {
+	display: flex;
+	border: 5px solid #34495e;
+}
+.box {
+	
+	padding: 20px;
+	border: 5px solid;
+	flex: 1;
+    height: 300px;
+    width: 300px;
+}
