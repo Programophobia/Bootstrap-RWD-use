@@ -24,10 +24,25 @@
     border: none;
 }
 .box {
-	
 	padding: 20px;
+    margin: 10px;
 	flex: 1;
     height: 300px;
     width: 300px;
-   
+    background-size: cover;
 }
+
+/*Gallery*/
+
+.img-1 {background-image: url('../images/pexels-andrea-piacquadio-845434.jpg');}
+.img-2 {background-image: url('../images/pexels-andrea-piacquadio-994234.jpg');}
+.img-3 {background-image: url('../images/pexels-evg-kowalievska-1040173.jpg');}
+.img-4 {background-image: url('../images/pexels-godisable-jacob-794062.jpg');}
+.img-5 {background-image: url('../images/pexels-godisable-jacob-818992.jpg');}
+.img-6 {background-image: url('../images/pexels-spencer-selover-428340.jpg');}
+.img-7 {background-image: url('../images/pexels-godisable-jacob-965324.jpg');}
+.img-8 {background-image: url('../images/pexels-juan-mendez-1536619.jpg');}
+.img-9 {background-image: url('../images/pexels-lumn-322207.jpg');}
+.img-10 {background-image: url('../images/pexels-yuri-manei-2690323.jpg');}
+.img-11 {background-image: url('../images/pexels-snack-toronto-1630344.jpg');}
+.img-12 {background-image: url('../images/pexels-pixabay-247204.jpg');}
