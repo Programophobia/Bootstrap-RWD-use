@@ -1,3 +1,10 @@
+/*Global*/
+
+h2 {
+    text-align: center;
+}
+
+
 /*Navbar*/
 
 .nav-btn {
@@ -11,6 +18,12 @@
 .carousel-item img {
     height: 100%;
     object-fit: cover;
+}
+
+/*Cards*/
+
+.card-body {
+text-align: center;
 }
 
 .card img {
@@ -38,6 +51,7 @@
 .list-group a {
     background: #ccc;
     font-weight: bold;
+    text-align: center;
 }
 
 .card .card-body .last {
@@ -74,6 +88,18 @@
     border-bottom: solid black;
 }
 
+/*Media Mobile RWD*/
+
+@media (max-width: 767px) {
+
+    .body {
+        text-align: center; 
+    }
+
+    .card .fa-solid {
+        display: none;
+    }
+}
 
 
 

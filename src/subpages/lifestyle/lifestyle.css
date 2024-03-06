@@ -92,3 +92,17 @@ body .element:hover {
     bottom: 0%;
 }
 
+/*Mobile RWD*/
+
+@media (max-width: 767px) {
+
+    .container {
+        width: fit-content;
+        align-items: center;
+        margin:50px 0 0 0;
+        padding: 0;
+       
+    }
+  
+}
+

@@ -21,42 +21,61 @@
 .img-11 {background-image: url('../images/pexels-snack-toronto-1630344.jpg');}
 .img-12 {background-image: url('../images/pexels-pixabay-247204.jpg');}
 
-/*CODE*/
+/*Gallery*/
 body {
     background: black;
     padding: 60px, 30px;
 }
+
 h1 {
     font-family: 'Open Sans', 'sans-serif';
     text-align: center;
     color: white;
     font-size: 36px;
 }
+
 .element {
-    height: 90px;
     margin: 5px;
     border-radius: 5px;
     background-position: center;
     background-size: cover;
 }
+
 .inside-container, .flex-column, .flex-row {
     display: flex;
     flex-wrap: wrap;
 }
+
 .flex-column {
     flex-direction: column;
 }
+
 .flex-1 {
     flex: 1;
 }
+
 .element, .element-big {
     height: 180px;
 }
+
 body:hover .element {
     opacity: 0.5;
 }
+
 body .element:hover {
     opacity: 1;
     cursor: pointer;
 }
 
+/*Media Mobile RWD*/
+
+@media (max-width: 767px) {
+    .flex-row, .inside-container, .flex-column {
+       display: block;
+        align-items: center; 
+    }
+
+    .element {
+        height: 500px;
+    }
+}

@@ -52,3 +52,14 @@
 .img-10 {background-image: url('../images/pexels-yuri-manei-2690323.jpg');}
 .img-11 {background-image: url('../images/pexels-snack-toronto-1630344.jpg');}
 .img-12 {background-image: url('../images/pexels-pixabay-247204.jpg');}
+
+/*Mobile RWD*/
+
+@media (max-width: 767px) {
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        height: 700px;  
+    }
+}
