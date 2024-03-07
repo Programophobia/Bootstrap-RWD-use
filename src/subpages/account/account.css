@@ -78,4 +78,12 @@ body .element:hover {
     .element {
         height: 500px;
     }
+
+    .navbar {
+        padding: 5px 30px 5px 30px;
+    }
+
+    .btn-group {
+        left: -50%;
+    }
 }

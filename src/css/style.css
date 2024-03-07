@@ -99,6 +99,14 @@ text-align: center;
     .card .fa-solid {
         display: none;
     }
+
+    .navbar {
+        padding: 5px 30px 5px 30px;
+    }
+
+    .btn-group {
+        left: -50%;
+    }
 }
 
 

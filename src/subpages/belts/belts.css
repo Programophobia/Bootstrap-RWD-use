@@ -62,5 +62,16 @@
         align-items: center;
         height: 700px;  
     }
+    .box {
+        
+        margin: 0 0 10px 0;
+    }
 
+    .navbar {
+        padding: 5px 30px 5px 30px;
+    }
+
+    .btn-group {
+        left: -50%;
+    }
 }
