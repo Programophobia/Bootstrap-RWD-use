@@ -26,15 +26,12 @@ body {
     color:aquamarine;
     top: 50%;
     right: 50%;
-
 }
 
-/*Gallery*/
+/*Navbar*/
 
-/*Global*/
-
-*, *::before, *::after {
-    box-sizing: border-box;
+.navbar {
+    padding: 5px 30px 5px 30px;
 }
 
 /*Gallery*/

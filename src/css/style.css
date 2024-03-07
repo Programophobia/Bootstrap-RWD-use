@@ -20,6 +20,10 @@ h2 {
     object-fit: cover;
 }
 
+.navbar {
+    padding: 5px 30px 5px 30px;
+}
+
 /*Cards*/
 
 .card-body {
