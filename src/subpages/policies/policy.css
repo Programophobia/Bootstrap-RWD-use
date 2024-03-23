@@ -1,3 +1,11 @@
 .accordion {
     margin: 150px;
 }
+
+/*Mobile RWD*/
+
+@media (max-width: 767px) {
+    .accordion{
+        margin: 70px 0 0 0;
+    }
+}
