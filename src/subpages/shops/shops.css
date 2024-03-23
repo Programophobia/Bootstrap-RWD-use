@@ -29,6 +29,10 @@ body{
         align-items: center;
     }
 
+    .navbar {
+        padding: 5px 30px 5px 30px;
+    }
+    
     .card {
         margin: auto;
         width: 134%;
