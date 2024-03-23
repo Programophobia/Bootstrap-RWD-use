@@ -35,6 +35,12 @@ body{
         border: none;
         padding: 10px;
       }
+      .list-group-item{
+        margin-bottom: 40px;
+      }
+.list-group-item.active {
+    display: none;
+}
 
       /*Mobile RWD*/
 

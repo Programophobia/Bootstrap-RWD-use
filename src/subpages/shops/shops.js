@@ -1,5 +1,12 @@
 'use strict';
 
+function printMessage(msg){
+	var div = document.createElement('span');
+	div.innerHTML = msg;
+    document.getElementById('new-msg').appendChild(div);
+}
+
+
 function titleClickHandler(event){
     console.log('Link was clicked!');
     event.preventDefault()
@@ -28,3 +35,9 @@ const links = document.querySelectorAll('.titles a');
 for(let link of links){
   link.addEventListener('click', titleClickHandler);
 }
+
+function printMessage(msg){
+	var div = document.createElement('span');
+	div.innerHTML = msg;
+}
+
