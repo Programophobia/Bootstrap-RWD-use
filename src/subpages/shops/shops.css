@@ -28,3 +28,33 @@ body{
     .row.post{
         align-items: center;
     }
+
+    .card {
+        margin: auto;
+        width: 134%;
+        border: none;
+        padding: 10px;
+      }
+
+      /*Mobile RWD*/
+
+@media (max-width: 767px) {
+    .card {
+        margin: auto;
+        width: 80%;
+        border: none;
+        padding: 10px;
+    }
+    .card-body {
+        text-align: center;
+    }
+    .navbar {
+        padding: 5px 30px 5px 30px;
+    }
+    .container {
+        padding: 30px 0 0 0;
+    }
+    .list-group-item {
+        margin-left: 5px;
+    }
+}
