@@ -1,11 +1,20 @@
 .accordion {
     margin: 150px;
 }
-
+.navbar {
+    padding: 5px 30px 5px 30px;
+}
 /*Mobile RWD*/
 
 @media (max-width: 767px) {
     .accordion{
         margin: 70px 0 0 0;
+    }
+    .navbar {
+        padding: 5px 30px 5px 30px;
+    }
+
+    .btn-group {
+        left: -50%;
     }
 }
