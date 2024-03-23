@@ -91,7 +91,16 @@ text-align: center;
 .info h2 {
     border-bottom: solid black;
 }
+footer {
+    color: #ccc;
+    font-size: 25px;
+  
+}
 
+footer a {
+    text-decoration: none;
+   
+}
 /*Media Mobile RWD*/
 
 @media (max-width: 767px) {
