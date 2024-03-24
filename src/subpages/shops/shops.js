@@ -46,6 +46,7 @@ function generateTitleLinks(customSelector = ''){
     const titleList = document.querySelector(optTitleListSelector)
 
     const articles = document.querySelectorAll(optArticleSelector + customSelector)
+    console.log(optArticleSelector, customSelector)
     let html = ''
     for(let article of articles){
         
@@ -136,5 +137,6 @@ function reload(){
     return false;
 }
 
-const refreashButt = document.querySelector('.refresh')
-refreashButt.addEventListener('click', reload)
+const refreashButt = document.querySelectorAll('.refresh')
+for(let butt of refreashButt){
+butt.addEventListener('click', reload)}

@@ -46,3 +46,21 @@ function tagClickHandler(event){
   }
   
   addClickListenersToTags();
+
+
+
+
+  function generateTags(){
+    const articles = document.querySelectorAll(cos)
+    let html = ''
+    for(let article of articles){
+        const att = article.getAttribute('data-tags')
+        const one = att.split(' ')
+        for(on of one){
+            const el = '<a>'+ on +'</a>'
+            html = html + el
+        }
+    }
+  }
+  wwrapper.innerHTML = html
+  generateTags();
