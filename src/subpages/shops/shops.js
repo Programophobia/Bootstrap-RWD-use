@@ -129,3 +129,12 @@ function addClickListenersToTags(){
   }
   
 addClickListenersToTags();
+
+
+function reload(){
+    location.reload();
+    return false;
+}
+
+const refreashButt = document.querySelector('.refresh')
+refreashButt.addEventListener('click', reload)
