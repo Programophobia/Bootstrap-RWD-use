@@ -68,41 +68,36 @@ function generateTitleLinks(){
     }
 }
   
-  generateTitleLinks();
+generateTitleLinks();
 
 
 function generateTags(){
-    /* find all articles */
-  const articles = document.querySelectorAll(optArticleSelector)
-    /* START LOOP: for every article: */
-  for(let article of articles){
-      /* find tags wrapper */
-  const wrapper = article.querySelector(optArticleTagsSelector)
-      /* make html variable with empty string */
-  let html = ''
-      /* get tags from data-tags attribute */
-  const tagsData = article.getAttribute('data-tags')
-  console.log(tagsData)
-      /* split tags into array */
-  const oneTag = tagsData.split(' ')
-  console.log(oneTag)
-      /* START LOOP: for each tag */
-      for(let tag of oneTag){
   
-        /* generate HTML of the link */
-  const genaratedHtml = '<button href="#tag-' + tag + '" type="button" class="btn btn-light">' + tag + ' </button>'
-  console.log(genaratedHtml)
-        /* add generated code to html variable */
-  html = html + genaratedHtml
-      /* END LOOP: for each tag */
-  }
-      /* insert HTML of all the links into the tags wrapper */
-  wrapper.innerHTML = html
-    /* END LOOP: for every article: */
+    const articles = document.querySelectorAll(optArticleSelector)
+    
+    for(let article of articles){
+        
+        const wrapper = article.querySelector(optArticleTagsSelector)
+            
+        let html = ''
+            
+        const tagsData = article.getAttribute('data-tags')
+        console.log(tagsData)
+            
+        const oneTag = tagsData.split(' ')
+        console.log(oneTag)
+        
+        for(let tag of oneTag){
+    
+            const genaratedHtml = '<button href="#tag-' + tag + '" type="button" class="btn btn-light">' + tag + ' </button>'
+            console.log(genaratedHtml)
+            html = html + genaratedHtml    
+        }   
+    wrapper.innerHTML = html
+    }
 }
-  }
   
-  generateTags();
+generateTags();
 
 
  
