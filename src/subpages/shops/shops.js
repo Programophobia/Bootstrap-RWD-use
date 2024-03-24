@@ -30,11 +30,6 @@ function titleClickHandler(event){
     match.classList.add('active');
 }
 
-const links = document.querySelectorAll('.titles a');
-
-for(let link of links){
-  link.addEventListener('click', titleClickHandler);
-}
 
 function printMessage(msg){
 	var div = document.createElement('span');
@@ -45,6 +40,37 @@ const optArticleSelector = '.allShops .post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles',
   optArticleTagsSelector = '.post-tags .list'
+
+function generateTitleLinks(){
+   
+    const titleList = document.querySelector(optTitleListSelector)
+    titleList.innerHTML = ''
+
+    const articles = document.querySelectorAll(optArticleSelector)
+    let html = ''
+    for(let article of articles){
+        
+        const articleId = article.getAttribute('id')
+            
+        const titleEl = article.querySelector('.card h5')
+        console.log(titleEl)
+            
+        const getTitle = titleEl.innerHTML
+            
+        const elHtml = '<a href="#'+ articleId +'" class="list-group-item list-group-item-action shadow-lg p-3 mb-3 bg-body rounded">' + getTitle + '</a>'
+        
+        html = html + elHtml
+        titleList.innerHTML = html
+        const links = document.querySelectorAll('.titles a');
+
+        for(let link of links){
+        link.addEventListener('click', titleClickHandler);
+        }
+    }
+}
+  
+  generateTitleLinks();
+
 
 function generateTags(){
     /* find all articles */
@@ -65,7 +91,8 @@ function generateTags(){
       for(let tag of oneTag){
   
         /* generate HTML of the link */
-  const genaratedHtml = '<button type="button" class="btn btn-light">' + tag + ' </button>'
+  const genaratedHtml = '<button href="#tag-' + tag + '" type="button" class="btn btn-light">' + tag + ' </button>'
+  console.log(genaratedHtml)
         /* add generated code to html variable */
   html = html + genaratedHtml
       /* END LOOP: for each tag */
@@ -77,3 +104,6 @@ function generateTags(){
   }
   
   generateTags();
+
+
+ 
