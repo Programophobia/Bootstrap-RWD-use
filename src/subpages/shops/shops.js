@@ -56,7 +56,7 @@ function generateTitleLinks(customSelector = ''){
             
         const getTitle = titleEl.innerHTML
             
-        const elHtml = '<br><a href="#'+ articleId +'" class="list-group-item list-group-item-action shadow-lg p-3 mb-3 bg-body rounded">' + getTitle + '</a>'
+        const elHtml = '<a href="#'+ articleId +'" class="list-group-item list-group-item-action shadow-lg p-3 mb-3 bg-body rounded">' + getTitle + '</a>'
         
         html = html + elHtml
         titleList.innerHTML = html
@@ -89,7 +89,7 @@ function generateTags(){
         
         for(let tag of oneTag){
     
-            const genaratedHtml = '<button href="#tag-' + tag + '" type="button" class="btn btn-light">' + tag + ' </button>'
+            const genaratedHtml = '<button href="#tag-' + tag + '" type="button" class="btn btn-light">' + tag + ' </button><span>'+' ' + '</span>'
             console.log(genaratedHtml)
             html = html + genaratedHtml    
         }   
