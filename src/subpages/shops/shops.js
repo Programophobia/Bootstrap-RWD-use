@@ -41,11 +41,11 @@ const optArticleSelector = '.allShops .post',
   optTitleListSelector = '.titles',
   optArticleTagsSelector = '.post-tags .list'
 
-function generateTitleLinks(){
+function generateTitleLinks(customSelector = ''){
    
     const titleList = document.querySelector(optTitleListSelector)
 
-    const articles = document.querySelectorAll(optArticleSelector)
+    const articles = document.querySelectorAll(optArticleSelector + customSelector)
     let html = ''
     for(let article of articles){
         
@@ -96,8 +96,36 @@ function generateTags(){
     wrapper.innerHTML = html
     }
 }
-  
 generateTags();
 
 
- 
+function tagClickHandler(event){
+   
+    event.preventDefault()
+    
+    const clickedTag = this;
+    const href = clickedTag.getAttribute('href')  
+    const tag = href.replace('#tag-', '')
+    console.log(tag)
+    const allActiveTags = document.querySelectorAll('button.active[href^="#tag-"]')
+    for(let activeTag of allActiveTags){
+        activeTag.classList.remove('active')
+    }
+    
+    const match = document.querySelectorAll('button[href="' + href + '"]')
+   
+    for(let ma of match){
+        ma.classList.add('active')
+    }
+    generateTitleLinks('[data-tags~="' + tag + '"]');
+}
+  
+function addClickListenersToTags(){
+     const allTagLinks = document.querySelectorAll('button[href^="#tag-"]')
+  
+    for(let tagLink of allTagLinks){
+        tagLink.addEventListener('click', tagClickHandler)
+    }
+  }
+  
+addClickListenersToTags();
