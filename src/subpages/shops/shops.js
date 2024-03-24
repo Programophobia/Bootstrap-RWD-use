@@ -44,7 +44,6 @@ const optArticleSelector = '.allShops .post',
 function generateTitleLinks(){
    
     const titleList = document.querySelector(optTitleListSelector)
-    titleList.innerHTML = ''
 
     const articles = document.querySelectorAll(optArticleSelector)
     let html = ''
@@ -57,7 +56,7 @@ function generateTitleLinks(){
             
         const getTitle = titleEl.innerHTML
             
-        const elHtml = '<a href="#'+ articleId +'" class="list-group-item list-group-item-action shadow-lg p-3 mb-3 bg-body rounded">' + getTitle + '</a>'
+        const elHtml = '<br><a href="#'+ articleId +'" class="list-group-item list-group-item-action shadow-lg p-3 mb-3 bg-body rounded">' + getTitle + '</a>'
         
         html = html + elHtml
         titleList.innerHTML = html
