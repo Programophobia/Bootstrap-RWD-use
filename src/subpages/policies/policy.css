@@ -18,3 +18,32 @@
         left: -50%;
     }
 }
+
+.info{
+    background-color: white;
+}
+.social-media ul {
+    list-style-type: none;
+    display: inline;
+    display: flex;
+    column-gap: 20px;
+    padding: 0;
+}
+
+.social-media ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0;
+}
+
+.social-media i {
+   font-size: 16px;
+}
+
+.info h5 {
+   font-weight: 50;
+}
+
+.info h2 {
+   border-bottom: solid black;
+}
