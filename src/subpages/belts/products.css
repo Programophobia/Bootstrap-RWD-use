@@ -1,0 +1,10 @@
+.oneArt {
+    display: none;
+    &.active {
+        display: block;
+}
+}
+
+body{
+    padding: 200px;
+}
