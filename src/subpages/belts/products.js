@@ -32,8 +32,8 @@ function titleClickHandler(event){
 
 
 
-function generateTitle(){
-    const allTitles = document.querySelectorAll('.title')
+function generateTitle(customSelector = ''){
+    const allTitles = document.querySelectorAll('.title' + customSelector)
     console.log(allTitles)
     let html =''
     for(let title of allTitles){
@@ -65,7 +65,7 @@ function generateTags(){
     console.log(tagAt)
     const tagArray = tagAt.split(' ')
         for(let oneTag of tagArray){
-            const htmlEl = '<li><a href="#'+ oneTag +'">'+oneTag+'</a></li>'
+            const htmlEl = '<li><a class="tag" href="#tag-'+ oneTag +'">'+oneTag+'</a></li>'
             html += htmlEl
             }
     wrapper.innerHTML = html
@@ -75,4 +75,44 @@ function generateTags(){
   generateTags();
 
 
+  function tagClickHandler(event){
+  
+  event.preventDefault
+  
+  const clickedEl = this;
  
+  const href = clickedEl.getAttribute('href')
+  
+    console.log(href)
+  const lol = href.replace('#tag-', '')
+  console.log(lol)
+ 
+  const allActiveTags = document.querySelectorAll('a.active[href^="#tag-"]')
+  console.log(allActiveTags)
+
+  for(let activeTag of allActiveTags){
+activeTag.classList.remove('active')
+  
+  }
+  const match = document.querySelectorAll('a[href="' + href + '"]')
+   
+  for(let m of match){
+    m.classList.add('active')
+  }
+
+generateTitle(('[data-tags~="' + lol + '"]'))
+console.log(('[data-tags~="' + lol + '"]'))
+
+  
+}
+  function addClickListenersToTags(){
+
+  const allLinks = document.querySelectorAll('a[href^="#tag-"]')
+  console.log(allLinks)
+
+  for(let p of allLinks){
+    p.addEventListener('click', tagClickHandler)
+  }
+  }
+  
+  addClickListenersToTags();
