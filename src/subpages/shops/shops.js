@@ -140,3 +140,5 @@ function reload(){
 const refreashButt = document.querySelectorAll('.refresh')
 for(let butt of refreashButt){
 butt.addEventListener('click', reload)}
+
+
