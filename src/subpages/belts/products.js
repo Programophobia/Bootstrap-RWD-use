@@ -2,6 +2,7 @@
 'use strict';
 
 
+
 console.log('hello')
 
 function titleClickHandler(event){
@@ -29,11 +30,7 @@ function titleClickHandler(event){
     }
 }
 
-const links = document.querySelectorAll('.titles a');
 
-for(let link of links){
-  link.addEventListener('click', titleClickHandler);
-} 
 
 function generateTitle(){
     const allTitles = document.querySelectorAll('.title')
@@ -48,6 +45,34 @@ function generateTitle(){
     }
     const titleList = document.querySelector('.titles')
     titleList.innerHTML = html;
+    const links = document.querySelectorAll('.titles a');
+
+for(let link of links){
+  link.addEventListener('click', titleClickHandler);
+} 
 
 }
 generateTitle()
+
+
+function generateTags(){
+
+  const allArt = document.querySelectorAll('.oneArt')
+  for(let art of allArt){
+    const wrapper = art.querySelector('.list-horizontal')
+    let html =''
+    const tagAt = art.getAttribute('data-tags')
+    console.log(tagAt)
+    const tagArray = tagAt.split(' ')
+        for(let oneTag of tagArray){
+            const htmlEl = '<li><a href="#'+ oneTag +'">'+oneTag+'</a></li>'
+            html += htmlEl
+            }
+    wrapper.innerHTML = html
+  }
+}
+  
+  generateTags();
+
+
+ 
