@@ -116,3 +116,7 @@ console.log(('[data-tags~="' + lol + '"]'))
   }
   
   addClickListenersToTags();
+
+  function myMessage(){
+    alert('Cart not Ready yet!')
+  }
