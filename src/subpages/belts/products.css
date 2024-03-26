@@ -9,3 +9,13 @@ body{
     padding: 100px 50px 50px 50px;
 }
 
+.all-links, .title {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .row{
+display: block;
+padding: 0;
+    }
+    }
