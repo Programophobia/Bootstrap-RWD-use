@@ -16,6 +16,29 @@ input{
     width: 30px;
     text-align: center;
 }
+.btn-quantity {
+background: #333;
+    color: #fff;
+    border-color: #333;
+    border-radius: 4px;
+    transition: all 0.3s;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: top;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    font-size: 10px;
+    &.add{
+        width: 90px;
+    }
+}
 @media (max-width: 767px) {
     body {
 
