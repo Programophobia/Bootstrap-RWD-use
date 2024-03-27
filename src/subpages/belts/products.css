@@ -1,7 +1,7 @@
 .oneArt {
     display: none;
     &.active {
-        display: block;
+        display: inline;
 }
 }
 
@@ -12,11 +12,14 @@ body{
 .all-links, .title {
     text-align: center;
 }
-
+input{
+    width: 30px;
+    text-align: center;
+}
 @media (max-width: 767px) {
     body {
 
 padding:100px 0 0 0;
 margin: 100px 0 0 0;
-    }
+}
 }

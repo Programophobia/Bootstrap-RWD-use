@@ -55,7 +55,7 @@ for(let link of links){
 generateTitle()
 
 
-function generateTags(){
+/*function generateTags(){
 
   const allArt = document.querySelectorAll('.oneArt')
   for(let art of allArt){
@@ -115,8 +115,20 @@ console.log(('[data-tags~="' + lol + '"]'))
   }
   }
   
-  addClickListenersToTags();
+  addClickListenersToTags();*/
 
   function myMessage(){
     alert('Cart and RWD not Ready yet!')
   }
+
+  function generateAount(){
+    const allWrappers = document.querySelectorAll('.widget-amount')
+    console.log(allWrappers)
+    for(let wrapper of allWrappers){
+      let html = ''
+      const el = '<h5 class="product__params-title">' + 'Select quantity and add: ' + '<span></h5><p> '+' '+' </p><a class="btn-quantity" href="#less"><i class="fas fa-minus"></i></a><input type="text" name="amount" value="1"><a class="btn-quantity" href="#more"><i class="fas fa-plus"></i></a> <a href="#"  onclick="myMessage()" class=" btn btn-primary">Add to cart</a></span>'
+      html = el + html;
+      wrapper.innerHTML = html;
+    }
+  }
+  generateAount()
