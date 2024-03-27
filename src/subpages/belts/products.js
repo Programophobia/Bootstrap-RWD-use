@@ -126,7 +126,7 @@ console.log(('[data-tags~="' + lol + '"]'))
     console.log(allWrappers)
     for(let wrapper of allWrappers){
       let html = ''
-      const el = '<h5 class="product__params-title">' + 'Select quantity and add: ' + '<span></h5><p> '+' '+' </p><a class="btn-quantity" href="#less"><i class="fas fa-minus"></i></a><input type="text" name="amount" value="1"><a class="btn-quantity" href="#more"><i class="fas fa-plus"></i></a> <a href="#"  onclick="myMessage()" class="btn-quantity add">Add to cart</a></span>'
+      const el = '<h5 class="product__params-title">' + 'Select quantity and add: ' + '<span></h5><p> '+' '+' </p><a class="btn-quantity" href="#less"><i class="fas fa-minus"></i></a><input class="inputAmount" type="text" name="amount" value="1"><a class="btn-quantity" href="#more"><i class="fas fa-plus"></i></a> <a href="#"  onclick="myMessage()" class="btn-quantity add">Add to cart</a></span>'
       html = el + html;
       wrapper.innerHTML = html;
     }
