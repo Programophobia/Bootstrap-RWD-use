@@ -132,3 +132,13 @@ console.log(('[data-tags~="' + lol + '"]'))
     }
   }
   generateAount()
+
+  function accord(event){
+    event.preventDefault;
+    const thisProduct = this
+    const activeProduct = document.querySelector('.cart__content')
+      activeProduct.classList.toggle('activeCart')
+  }
+
+  const clickableTrigger = document.querySelector('.cart__summary');
+  clickableTrigger.addEventListener('click', accord)

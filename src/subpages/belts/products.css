@@ -29,11 +29,14 @@ nav {
     color: #868585;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
     z-index: 9999;
-    font-size: 20px;
-    text-align: center;
+    font-size: 17px;
+    text-align: left;
+    
     
 } 
-
+.activeCart{
+    display: none;
+}
 
 .btn-quantity {
 background: #333;
