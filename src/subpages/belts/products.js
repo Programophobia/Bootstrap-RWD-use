@@ -150,11 +150,17 @@ console.log(('[data-tags~="' + lol + '"]'))
  function aaccord(){
   const thisProduct = this;
 const price = document.querySelector('.price')
+const stablePrice = document.querySelector('.diplayNone')
 console.log(price)
-
+let elPrice = stablePrice.innerHTML
+let replase = elPrice.replace('<p class="diplayNone">', '')
+let moreReplase = replase.replace('</p>', '')
+console.log(moreReplase)
+let matNewPrice = moreReplase * 1.3;
+console.log(matNewPrice)
 
 let html = '';
-const el = '<span>300</span>'
+const el = '<span class="price">'+matNewPrice+'</span>'
 html = html + el;
 price.innerHTML = html
 btn.classList.add('addd')
@@ -171,11 +177,16 @@ btn.addEventListener('click', aaccord);
 function aaccorda(){
   const thisProduct = this;
 const price = document.querySelector('.price')
-console.log(price)
+const stablePrice = document.querySelector('.diplayNone')
 
+let elPrice = stablePrice.innerHTML
+let replase = elPrice.replace('<p class="diplayNone">', '')
+let moreReplase = replase.replace('</p>', '')
+console.log(moreReplase)
+let matNewPrice = moreReplase
 
 let html = '';
-const el = '<span>200</span>'
+const el = '<span class="price">'+ matNewPrice +'</span>'
 html = html + el;
 price.innerHTML = html
 btn.classList.add('addd')
