@@ -141,4 +141,48 @@ console.log(('[data-tags~="' + lol + '"]'))
   }
 
   const clickableTrigger = document.querySelector('.cart__summary');
-  clickableTrigger.addEventListener('click', accord)
+  clickableTrigger.addEventListener('click', accord);
+
+ //Price element count
+
+
+
+ function aaccord(){
+  const thisProduct = this;
+const price = document.querySelector('.price')
+console.log(price)
+
+
+let html = '';
+const el = '<span>300</span>'
+html = html + el;
+price.innerHTML = html
+btn.classList.add('addd')
+
+ }
+
+const btn =  document.querySelector('.ggg');
+console.log(btn)
+
+btn.addEventListener('click', aaccord);
+
+
+
+function aaccorda(){
+  const thisProduct = this;
+const price = document.querySelector('.price')
+console.log(price)
+
+
+let html = '';
+const el = '<span>200</span>'
+html = html + el;
+price.innerHTML = html
+btn.classList.add('addd')
+
+ }
+
+const btnS =  document.querySelector('.kkk');
+console.log(btn)
+
+btnS.addEventListener('click', aaccorda);
