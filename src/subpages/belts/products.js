@@ -149,6 +149,8 @@ console.log(('[data-tags~="' + lol + '"]'))
 
  function aaccord(){
   const thisProduct = this;
+  console.log(thisProduct)
+
 const price = document.querySelector('.price')
 const stablePrice = document.querySelector('.diplayNone')
 console.log(price)
@@ -176,6 +178,14 @@ btn.addEventListener('click', aaccord);
 
 function aaccorda(){
   const thisProduct = this;
+  
+  const ell = this;
+
+  // the closest ancestor with the id of "div-02"
+  const mamyTo = ell.closest("div"); 
+  console.log(mamyTo)
+ const attNew = mamyTo.getAttribute('id')
+console.log(attNew)
 const price = document.querySelector('.price')
 const stablePrice = document.querySelector('.diplayNone')
 
@@ -197,3 +207,4 @@ const btnS =  document.querySelector('.kkk');
 console.log(btn)
 
 btnS.addEventListener('click', aaccorda);
+
