@@ -186,9 +186,11 @@ function aaccorda(){
   console.log(mamyTo)
  const attNew = mamyTo.getAttribute('id')
 console.log(attNew)
-const price = document.querySelector('.price')
+//const price = document.querySelector('.price')
+let price = ell.closest('div')
+let priceSpan = price.firstChild
 const stablePrice = document.querySelector('.diplayNone')
-
+console.log(price)
 let elPrice = stablePrice.innerHTML
 let replase = elPrice.replace('<p class="diplayNone">', '')
 let moreReplase = replase.replace('</p>', '')
@@ -198,7 +200,7 @@ let matNewPrice = moreReplase
 let html = '';
 const el = '<span class="price">'+ matNewPrice +'</span>'
 html = html + el;
-price.innerHTML = html
+priceSpan.innerHTML = html
 btn.classList.add('addd')
 
  }
