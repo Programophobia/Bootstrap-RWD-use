@@ -70,7 +70,6 @@ body:hover .element {
 
 body .element:hover {
     opacity: 1;
-    cursor: pointer;
 }
 
 /*Media Mobile RWD*/
