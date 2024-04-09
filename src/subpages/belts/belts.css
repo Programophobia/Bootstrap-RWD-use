@@ -66,7 +66,11 @@
     .row {
         flex-direction: column;
         align-items: center;
-        height: 500px;  
+        height: 500px; 
+         
+    }
+    .row.rwd-footer{
+        height: 150px;
     }
     .box {
         
