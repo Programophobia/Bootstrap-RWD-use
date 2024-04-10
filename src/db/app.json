@@ -1,7 +1,7 @@
 {
-    "orders":{
-       "item": "1"
-      
-    }
- }
- 
+  "orders": {
+    "deliveryFee": 20,
+    "items": 1,
+    "price": 88
+  }
+}

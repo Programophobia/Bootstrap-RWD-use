@@ -1,10 +1,47 @@
 
 'use strict';
 
+//API
+
+const select = {
+  db: {
+    url: 'http//localhost:3131',
+    orders: 'orders',
+  },
+}
 
 
-console.log('hello')
+const sentOrderButton = document.querySelector('.API-getaway');
+sentOrderButton.addEventListener('click', sendOrder)
 
+
+
+function sendOrder() {
+  const thisCart = this;
+  const url = 'http://localhost:3131/orders'
+  console.log(url);
+  const payload = {};
+
+ 
+  payload.deliveryFee = 20
+  payload.items = 1
+  payload.price = 88
+
+  
+  const options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  };
+
+  fetch(url, options);
+}
+
+
+
+//Rest
 function titleClickHandler(event){
     console.log('Link was clicked!');
     event.preventDefault();
