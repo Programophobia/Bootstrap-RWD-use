@@ -5,7 +5,7 @@ document.getElementById("btn-post").addEventListener("click", function (event) {
     const newComment = document.getElementById("new-comment").value
     const commentContainer = document.getElementById("comment-container");
     const commentElement = document.createElement("p");
-    commentElement.innerHTML = '<p class="newComment"><i class="fa-solid fa-user"></i> Anonim: </p>' + newComment;
+    commentElement.innerHTML = '<p class="newComment"><i class="fa-solid fa-user"></i> Anonim: </p>' + '"' + newComment + '"';
     commentContainer.appendChild(commentElement);
     document.getElementById("new-comment").value = "";
 });
