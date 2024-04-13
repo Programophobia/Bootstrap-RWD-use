@@ -10,7 +10,7 @@ document.getElementById("btn-post").addEventListener("click", function (event) {
     // Step 3: Create a new paragraph element for the comment
     const commentContainer = document.getElementById("comment-container");
     const commentElement = document.createElement("p");
-    commentElement.innerText = newComment;
+    commentElement.innerHTML = '<p class="newComment">Anonim: </p>' + newComment;
 
     // Step 4: Append the comment to the comment container
     commentContainer.appendChild(commentElement);
