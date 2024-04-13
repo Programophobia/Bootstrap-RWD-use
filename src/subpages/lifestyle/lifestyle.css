@@ -94,6 +94,13 @@ body .element:hover {
     align-items: center;
     text-align: center;
 }
+.btn{
+    margin-top: 20px;
+}
+
+.search-form{
+    margin: 20px;
+}
 /*Mobile RWD*/
 
 @media (max-width: 767px) {
@@ -112,6 +119,5 @@ body .element:hover {
     .btn-group {
         left: -50%;
     }
-  
 }
 
