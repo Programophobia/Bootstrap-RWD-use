@@ -88,7 +88,10 @@ body .element:hover {
     font-size: 25px;
     bottom: 0%;
 }
-
+.coments-search{
+    align-items: center;
+    text-align: center;
+}
 /*Mobile RWD*/
 
 @media (max-width: 767px) {
