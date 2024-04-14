@@ -7,7 +7,7 @@ document.getElementById("btn-post").addEventListener("click", function (event) {
     const commentElement = document.createElement("p");
     const now = new Date();
     console.dir(now);
-    let com = '<p class="newComment" id="postC"><i class="fa-solid fa-user"></i>  Anonim: </p>' + '"' + newComment + '" <br> '+ now +' ';
+    let com = '<p class="newComment" id="postC"><i class="fa-solid fa-user"></i>  Anonim: </p>' + '<p id="postX">"' + newComment + '" </p><br> '+ now +' ';
     commentElement.innerHTML = com;
    // const jComment = JSON.stringify(newComment + ' ' + now);
     //const url = 'http://localhost:3131/comments'
@@ -56,12 +56,11 @@ function sendOrder() {
   const payload = {};
 
  let k = document.getElementById("postC").innerText
- //let l = document.getElementById("postX").innerText
+ let l = document.getElementById("postX").innerText
   payload.comment =  k;
- // payload.text = l;
-console.log(k)
+  payload.text = l;
+  console.log(l)
 
-  
   const options = {
     method: 'POST',
     headers: {
