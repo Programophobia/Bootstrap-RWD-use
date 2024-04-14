@@ -18,7 +18,7 @@
     "watch:browsersync": "browser-sync start --server --files \"css/*.css\" \"*.html\"",
     "watch:sassprefixer": "onchange sass/*.scss -- npm run build-dev",
     "watch": "npm-run-all build build-dev -p watch:*",
-    "server": "json-server --port 3131 --no-cors --delay 250 --watch src/db/app.json"
+    "server": "json-server --port 3131 --no-cors --delay 2 --watch src/db/app.json"
   },
   "keywords": [],
   "author": "",

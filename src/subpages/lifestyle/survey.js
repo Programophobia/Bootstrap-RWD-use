@@ -4,6 +4,9 @@ function executeClick(event){
    const thisStar = this;
    const newMessage = document.querySelector('.rating')
    const mess = thisStar.getAttribute('title')
+   //const readFeedback = thisStar.html()
+   //const clean = readFeedback.replace('<i class=" fa-solid fa-thumbs-up"></i><i>', '')
+  // console.log(readFeedback)
    newMessage.innerHTML = '<p class="newComment"><i class="fa-solid fa-user"></i> Anonim: </p>' + '"' + mess + '"';
 }
 

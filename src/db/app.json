@@ -3,5 +3,8 @@
     "deliveryFee": 20,
     "items": 1,
     "price": 88
+  },
+  "comments": {
+    "comment": " Anonim:"
   }
 }

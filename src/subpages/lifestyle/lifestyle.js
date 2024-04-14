@@ -5,7 +5,23 @@ document.getElementById("btn-post").addEventListener("click", function (event) {
     const newComment = document.getElementById("new-comment").value
     const commentContainer = document.getElementById("comment-container");
     const commentElement = document.createElement("p");
-    commentElement.innerHTML = '<p class="newComment"><i class="fa-solid fa-user"></i> Anonim: </p>' + '"' + newComment + '"';
+    const now = new Date();
+    console.dir(now);
+    let com = '<p class="newComment" id="postC"><i class="fa-solid fa-user"></i>  Anonim: </p>' + '"' + newComment + '" <br> '+ now +' ';
+    commentElement.innerHTML = com;
+   // const jComment = JSON.stringify(newComment + ' ' + now);
+    //const url = 'http://localhost:3131/comments'
+    //const options = {
+    //  method: 'POST',
+    //  headers: {
+      //  'Content-Type': 'application/json',
+    //  },
+    //  body: JSON.stringify(newComment + ' ' + now),
+   // };
+  
+   // fetch(url, options);
+    
+    //console.log(jComment)
     commentContainer.appendChild(commentElement);
     document.getElementById("new-comment").value = "";
 });
@@ -30,3 +46,31 @@ function setDataToLocalStorage(newData){
 function getDataFromLocalStorage(){
   return localStorage.getItem(localStorageKey) || "";
 }
+
+
+
+function sendOrder() {
+  const thisCart = this;
+  const url = 'http://localhost:3131/comments'
+  console.log(url);
+  const payload = {};
+
+ let k = document.getElementById("postC").innerText
+ //let l = document.getElementById("postX").innerText
+  payload.comment =  k;
+ // payload.text = l;
+console.log(k)
+
+  
+  const options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  };
+
+  fetch(url, options);
+}
+
+document.getElementById("btn-post").addEventListener("click", sendOrder) 
