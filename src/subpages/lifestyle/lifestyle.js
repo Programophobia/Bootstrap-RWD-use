@@ -1,4 +1,26 @@
 
+function sendOrder() {
+  const thisCart = this;
+  const url = 'http://localhost:3131/comments'
+  console.log(url);
+  const payload = [];
+
+ const newComment = document.getElementById("new-comment").value
+  console.log(newComment)
+  payload.push(newComment)
+  const options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  };
+
+  fetch(url, options);
+}
+
+document.getElementById("btn-post").addEventListener("click", sendOrder) 
+
 document.getElementById("btn-post").addEventListener("click", function (event) {
     event.preventDefault()
    
@@ -9,19 +31,6 @@ document.getElementById("btn-post").addEventListener("click", function (event) {
     console.dir(now);
     let com = '<p class="newComment" id="postC"><i class="fa-solid fa-user"></i>  Anonim: </p>' + '<p id="postX">"' + newComment + '" </p><br> '+ now +' ';
     commentElement.innerHTML = com;
-   // const jComment = JSON.stringify(newComment + ' ' + now);
-    //const url = 'http://localhost:3131/comments'
-    //const options = {
-    //  method: 'POST',
-    //  headers: {
-      //  'Content-Type': 'application/json',
-    //  },
-    //  body: JSON.stringify(newComment + ' ' + now),
-   // };
-  
-   // fetch(url, options);
-    
-    //console.log(jComment)
     commentContainer.appendChild(commentElement);
     document.getElementById("new-comment").value = "";
 });
@@ -49,27 +58,4 @@ function getDataFromLocalStorage(){
 
 
 
-function sendOrder() {
-  const thisCart = this;
-  const url = 'http://localhost:3131/comments'
-  console.log(url);
-  const payload = {};
 
- let k = document.getElementById("postC").innerText
- let l = document.getElementById("postX").innerText
-  payload.comment =  k;
-  payload.text = l;
-  console.log(l)
-
-  const options = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(payload),
-  };
-
-  fetch(url, options);
-}
-
-document.getElementById("btn-post").addEventListener("click", sendOrder) 
