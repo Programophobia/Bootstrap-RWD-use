@@ -1,7 +1,7 @@
 
 function sendOrder() {
   const thisCart = this;
-  const url = 'http://localhost:3131/comments'
+  const url = 'http://localhost:3131/orders'
   console.log(url);
   const payload = [];
 
@@ -30,31 +30,19 @@ document.getElementById("btn-post").addEventListener("click", function (event) {
     const now = new Date();
     console.dir(now);
     let com = '<p class="newComment" id="postC"><i class="fa-solid fa-user"></i>  Anonim: </p>' + '<p id="postX">"' + newComment + '" </p><br> '+ now +' ';
-    commentElement.innerHTML = com;
+   // commentElement.innerHTML = com;
     commentContainer.appendChild(commentElement);
     document.getElementById("new-comment").value = "";
+    localStorage.setItem("myCat", com);
+
+    const cat = localStorage.getItem("myCat");
+    console.log(cat);
+    commentElement.innerHTML = cat
+
 });
-function showInput() {
-    document.getElementById('comment-container').innerHTML =
-      document.getElementById("new-comment").value;
-  }
-const localStorageKey = "myData";
-document.getElementById("new-comment").value = getDataFromLocalStorage();
-document.getElementById('comment-container').innerHTML = getDataFromLocalStorage();
 
-function showInput() {
-  var user_input = document.getElementById("new-comment").value;
-  setDataToLocalStorage(user_input);
-  document.getElementById('comment-container').innerHTML = user_input;
-}
 
-function setDataToLocalStorage(newData){
-   localStorage.setItem(localStorageKey, newData);
-}
 
-function getDataFromLocalStorage(){
-  return localStorage.getItem(localStorageKey) || "";
-}
 
 
 

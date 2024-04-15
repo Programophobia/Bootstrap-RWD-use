@@ -1,9 +1,7 @@
 {
-  "orders": {
-    "deliveryFee": 20,
-    "items": 1,
-    "price": 88
-  },
+  "orders": [
+    "tttttttttttttttttttt"
+  ],
   "comments": [
     "ffff"
   ]

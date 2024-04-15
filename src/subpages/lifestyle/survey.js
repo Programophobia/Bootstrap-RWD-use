@@ -2,18 +2,15 @@
 function executeClick(event){
     event.preventDefault();
    const thisStar = this;
-   const newMessage = document.querySelector('.rating')
-   const mess = thisStar.getAttribute('title')
-   //const readFeedback = thisStar.html()
-   //const clean = readFeedback.replace('<i class=" fa-solid fa-thumbs-up"></i><i>', '')
-  // console.log(readFeedback)
+   const newMessage = document.querySelector('.rating');
+   const mess = thisStar.getAttribute('title');
    newMessage.innerHTML = '<p class="newComment"><i class="fa-solid fa-user"></i> Anonim: </p>' + '"' + mess + '"';
 }
 
 
 const clickableStars = document.querySelectorAll('.x')
 for(let clickableStar of clickableStars){
-    clickableStar.addEventListener('click', executeClick)
+    clickableStar.addEventListener('click', executeClick);
 }
 
 function reload(){
@@ -21,6 +18,7 @@ function reload(){
     return false;
 }
 
-const refreashButt = document.querySelector('.refresh')
+const refreashButt = document.querySelector('.refresh');
 
-refreashButt.addEventListener('click', reload)
+refreashButt.addEventListener('click', reload);
+
