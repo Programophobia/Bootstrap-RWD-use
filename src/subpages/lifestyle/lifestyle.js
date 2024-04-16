@@ -37,13 +37,6 @@ document.getElementById("btn-post").addEventListener("click", function (event) {
 
     const cat = localStorage.getItem("myCat");
     console.log(cat);
-    commentElement.innerHTML = cat
-
+    commentElement.innerHTML = cat;
 });
-
-
-
-
-
-
 
