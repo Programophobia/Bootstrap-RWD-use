@@ -249,6 +249,7 @@ btnS.addEventListener('click', aaccorda);
 
 //counting
 const plus = document.querySelectorAll('.fa-plus')
+
 for(let p of plus){
       p.addEventListener('click', function(){
     const thisBtn = this;
@@ -275,7 +276,9 @@ for(let m of minus){
     let numbro = parseInt(read);
 
     let newAmount = numbro - 1;
+    if(newAmount>0){
     number.setAttribute("value", newAmount);
+    }
   })}
 
 //<input class="inputAmount" type="text" name="amount" value="1">
