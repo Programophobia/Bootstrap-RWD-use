@@ -216,29 +216,29 @@ btn.addEventListener('click', aaccord);
 function aaccorda(){
   const thisProduct = this;
   
-  const ell = this;
+    const ell = this;
 
   // the closest ancestor with the id of "div-02"
-  const mamyTo = ell.closest("div"); 
-  console.log(mamyTo)
- const attNew = mamyTo.getAttribute('id')
-console.log(attNew)
-//const price = document.querySelector('.price')
-const price = document.querySelector('.price')
-let priceSpan = price.firstChild
-const stablePrice = document.querySelector('.diplayNone')
-console.log(price)
-let elPrice = stablePrice.innerHTML
-let replase = elPrice.replace('<p class="diplayNone">', '')
-let moreReplase = replase.replace('</p>', '')
-console.log(moreReplase)
-let matNewPrice = moreReplase
+    const mamyTo = ell.closest("div"); 
+    console.log(mamyTo)
+    const attNew = mamyTo.getAttribute('id')
+    console.log(attNew)
+    //const price = document.querySelector('.price')
+    const price = document.querySelector('.price')
+    let priceSpan = price.firstChild
+    const stablePrice = document.querySelector('.diplayNone')
+    console.log(price)
+    let elPrice = stablePrice.innerHTML
+    let replase = elPrice.replace('<p class="diplayNone">', '')
+    let moreReplase = replase.replace('</p>', '')
+    console.log(moreReplase)
+    let matNewPrice = moreReplase
 
-let html = '';
-const el = '<span class="price">'+ matNewPrice +'</span>'
-html = html + el;
-price.innerHTML = html
-btn.classList.add('addd')
+    let html = '';
+    const el = '<span class="price">'+ matNewPrice +'</span>'
+    html = html + el;
+    price.innerHTML = html
+    btn.classList.add('addd')
 
  }
 
@@ -260,6 +260,25 @@ for(let p of plus){
     let numbro = parseInt(read);
     let newAmount = numbro + 1;
     number.setAttribute("value", newAmount);
+    const cartDiv = thisBtn.closest(".card-body");
+    let price = cartDiv.querySelector("p")
+    let currentPrice = price.innerText
+    let omg = currentPrice.replace("PRICE: ", "")
+    let numberOmg = parseInt(omg)
+    console.log(omg)
+    const st = cartDiv.getAttribute("id")
+    console.log(cartDiv)
+    const parsedValue = parseInt(st)
+    let newcountPrice = numberOmg + parsedValue;
+    console.log(newcountPrice)
+
+
+    let html = '';
+    const el = '<span class="price">PRICE: '+ newcountPrice +'</span>'
+    html = html + el;
+    price.innerHTML = html
+
+
   })
 }
 
@@ -278,6 +297,21 @@ for(let m of minus){
     let newAmount = numbro - 1;
     if(newAmount>0){
     number.setAttribute("value", newAmount);
+    const cartDiv = thisBtn.closest(".card-body");
+    let price = cartDiv.querySelector("p")
+    let currentPrice = price.innerText
+    let omg = currentPrice.replace("PRICE: ", "")
+    let numberOmg = parseInt(omg)
+    console.log(omg)
+    const st = cartDiv.getAttribute("id")
+    console.log(cartDiv)
+    const parsedValue = parseInt(st)
+    let newcountPrice = numberOmg - parsedValue;
+    console.log(newcountPrice)
+    let html = '';
+    const el = '<span class="price">PRICE: '+ newcountPrice +'</span>'
+    html = html + el;
+    price.innerHTML = html
     }
   })}
 
