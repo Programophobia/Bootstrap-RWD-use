@@ -348,3 +348,8 @@ amountInCart.innerHTML = read
   })
 }
 
+const placeOrder = document.querySelector(".API-getaway");
+placeOrder.addEventListener("click", function(){
+  location.reload();
+  return false;
+})
