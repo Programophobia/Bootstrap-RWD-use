@@ -339,5 +339,12 @@ for(let subBtn of submitBTN){
     total.innerHTML = allTogether;
     totalAllIn.innerHTML = allTogether;
 
+    const cat = thisPrice.closest("div")
+    console.log(cat)
+    let number = cat.querySelector('.inputAmount')
+    let read = number.getAttribute("value")
+    const amountInCart = document.querySelector(".cart__total-number")
+amountInCart.innerHTML = read
   })
 }
+
