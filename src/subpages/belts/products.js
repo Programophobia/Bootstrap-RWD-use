@@ -247,3 +247,35 @@ console.log(btn)
 
 btnS.addEventListener('click', aaccorda);
 
+//counting
+const plus = document.querySelectorAll('.fa-plus')
+for(let p of plus){
+      p.addEventListener('click', function(){
+    const thisBtn = this;
+    const cat = thisBtn.closest("div")
+    console.log(cat)
+    let number = cat.querySelector('.inputAmount')
+    let read = number.getAttribute("value")
+    let numbro = parseInt(read);
+    let newAmount = numbro + 1;
+    number.setAttribute("value", newAmount);
+  })
+}
+
+
+const minus = document.querySelectorAll('.fa-minus')
+
+for(let m of minus){
+      m.addEventListener('click', function(){
+    const thisBtn = this;
+    const cat = thisBtn.closest("div")
+    console.log(cat)
+    let number = cat.querySelector('.inputAmount')
+    let read = number.getAttribute("value")
+    let numbro = parseInt(read);
+
+    let newAmount = numbro - 1;
+    number.setAttribute("value", newAmount);
+  })}
+
+//<input class="inputAmount" type="text" name="amount" value="1">
