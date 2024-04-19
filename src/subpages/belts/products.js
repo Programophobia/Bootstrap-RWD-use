@@ -155,7 +155,7 @@ console.log(('[data-tags~="' + lol + '"]'))
   addClickListenersToTags();*/
 
   function myMessage(){
-    alert('Cart and RWD not Ready yet!')
+    alert('Order added to cart')
   }
 
   function generateAount(){
@@ -223,7 +223,6 @@ function aaccorda(){
     console.log(mamyTo)
     const attNew = mamyTo.getAttribute('id')
     console.log(attNew)
-    //const price = document.querySelector('.price')
     const price = document.querySelector('.price')
     let priceSpan = price.firstChild
     const stablePrice = document.querySelector('.diplayNone')
@@ -315,4 +314,30 @@ for(let m of minus){
     }
   })}
 
-//<input class="inputAmount" type="text" name="amount" value="1">
+//Add to cart
+const submitBTN = document.querySelectorAll(".add")
+
+for(let subBtn of submitBTN){
+  subBtn.addEventListener("click", function(){
+    const thisPrice = this;
+    const sumEl = document.querySelector(".cart__order-price-sum");
+    const totalAllIn = document.getElementById("1")
+    const deliveryPr = document.querySelector(".deliv");
+    const total = document.querySelector(".sum");
+    let html = ''
+    const cartDiv = thisPrice.closest(".card-body");
+    let price = cartDiv.querySelector("p")
+    let currentPrice = price.innerText
+    let omg = currentPrice.replace("PRICE: ", "")
+    let numberOmg = parseInt(omg)
+    console.log(omg)
+    const el = '<span class="price"> '+ numberOmg +'</span>'
+    html = html + el;
+    sumEl.innerHTML = html
+    deliveryPr.innerHTML = 20;
+    let allTogether = 20 + numberOmg
+    total.innerHTML = allTogether;
+    totalAllIn.innerHTML = allTogether;
+
+  })
+}
