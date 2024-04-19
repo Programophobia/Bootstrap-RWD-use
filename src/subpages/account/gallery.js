@@ -33,9 +33,16 @@ event.preventDefault();
 const thisPic = this;
 thisPic.classList.toggle('a');
 const here = thisPic.querySelector('.heart')
-here.innerHTML = '<div id="k"><i class="fa-solid fa-heart"></i></div>'
-const hey = document.getElementById("k");
-hey.classList.remove('j')
+here.innerHTML = '<div id="k" class="con"><i class="fa-solid fa-heart"></i></div>'
+console.log(thisPic)
+//const hey = thisPic.getElementById("k");
+const closest = this.closest("div");
+console.log(closest)
+
+
+const ipt =  closest.querySelector(".con");
+
+ipt.classList.toggle('j');
   }
 
   const pics = document.querySelectorAll('.element')
