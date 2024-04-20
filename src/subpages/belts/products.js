@@ -9,7 +9,12 @@ const select = {
     orders: 'orders',
   },
 }
-
+const placeOrder = document.querySelector(".API-getaway");
+placeOrder.addEventListener("click", function(){
+  location.reload();
+  alert('Thank you for your order. It went straight into the abbys')
+  return false;
+})
 
 const sentOrderButton = document.querySelector('.API-getaway');
 sentOrderButton.addEventListener('click', sendOrder)
@@ -154,16 +159,13 @@ console.log(('[data-tags~="' + lol + '"]'))
   
   addClickListenersToTags();*/
 
-  function myMessage(){
-    alert('Order added to cart')
-  }
 
   function generateAount(){
     const allWrappers = document.querySelectorAll('.widget-amount')
     console.log(allWrappers)
     for(let wrapper of allWrappers){
       let html = ''
-      const el = '<h5 class="product__params-title">' + 'Select quantity and add: ' + '<span></h5><p> '+' '+' </p><a class="btn-quantity" href="#less"><i class="fas fa-minus"></i></a><input class="inputAmount" type="text" name="amount" value="1"><a class="btn-quantity" href="#more"><i class="fas fa-plus"></i></a> <a href="#"  onclick="myMessage()" class="btn-quantity add">Add to cart</a></span>'
+      const el = '<h5 class="product__params-title">' + 'Select quantity and add: ' + '<span></h5><p> '+' '+' </p><a class="btn-quantity" href="#less"><i class="fas fa-minus"></i></a><input class="inputAmount" type="text" name="amount" value="1"><a class="btn-quantity" href="#more"><i class="fas fa-plus"></i></a> <a href="#" class="btn-quantity add">Add to cart</a></span>'
       html = el + html;
       wrapper.innerHTML = html;
     }
@@ -348,8 +350,3 @@ amountInCart.innerHTML = read
   })
 }
 
-const placeOrder = document.querySelector(".API-getaway");
-placeOrder.addEventListener("click", function(){
-  location.reload();
-  return false;
-})
