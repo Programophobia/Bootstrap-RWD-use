@@ -28,6 +28,7 @@ document.getElementById("btn-post").addEventListener("click", function (event) {
     const commentContainer = document.getElementById("comment-container");
     const commentElement = document.createElement("p");
     const now = new Date();
+    
     console.dir(now);
     let com = '<p class="newComment" id="postC"><i class="fa-solid fa-user"></i>  Anonim: </p>' + '<p id="postX">"' + newComment + '" </p><br> '+ now +' ';
    // commentElement.innerHTML = com;
