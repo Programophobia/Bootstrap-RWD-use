@@ -4,9 +4,18 @@
 .navbar {
     padding: 5px 30px 5px 30px;
 }
+.map{
+    text-align: center;
+    align-items: center;
+}
 /*Mobile RWD*/
 
 @media (max-width: 767px) {
+
+    body{
+        text-align: center;
+        align-items: center;
+    }
     .accordion{
         margin: 70px 0 0 0;
     }
