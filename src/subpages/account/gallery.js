@@ -81,10 +81,6 @@ thisBooksList.filtersForm = document.querySelector('.filters');
       }  
     }
   }*/
-
-
-
-  
  
   const newChecbox = document.querySelector('.new')
   const classicChecbox = document.querySelector('.classic')
