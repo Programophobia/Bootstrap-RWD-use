@@ -86,6 +86,9 @@ body .element:hover {
     opacity: 0.6;
 }
 
+.bright{
+    display: none;
+}
 .j {
     display: none;
 }

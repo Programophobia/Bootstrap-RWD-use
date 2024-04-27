@@ -316,7 +316,7 @@ for(let m of minus){
     }
   })}
 
-//Add to cart
+
 const submitBTN = document.querySelectorAll(".add")
 
 for(let subBtn of submitBTN){

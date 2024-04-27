@@ -43,3 +43,5 @@ const submitB = document.getElementById("3")
   amountInCart.innerHTML = read
     })
   
+
+   

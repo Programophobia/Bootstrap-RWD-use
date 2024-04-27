@@ -49,8 +49,8 @@ const products = [
 
 //filter
 
-const  thisBooksList = this;
-
+/*const  thisBooksList = this;
+const filters = []
 thisBooksList.filtersForm = document.querySelector('.filters');
 
   thisBooksList.filtersForm.addEventListener('click', function(event){
@@ -80,4 +80,30 @@ thisBooksList.filtersForm = document.querySelector('.filters');
         bookElement.classList.remove('hidden');
       }  
     }
-  }
+  }*/
+
+
+
+  
+ 
+  const newChecbox = document.querySelector('.new')
+  const classicChecbox = document.querySelector('.classic')
+
+
+  newChecbox.addEventListener('click', function(){
+    const neww = document.querySelectorAll('.n')
+    for(let n of neww){
+    n.classList.toggle('bright')}
+  })
+  classicChecbox.addEventListener('click', function(){
+    const classic = document.querySelectorAll('.c');
+    for(let c of classic){
+    c.classList.toggle('bright')}
+    if (newChecbox.checked && classicChecbox.checked){
+      location.reload();
+      return false;
+    }
+  })
+
+
+
