@@ -95,10 +95,6 @@ thisBooksList.filtersForm = document.querySelector('.filters');
     const classic = document.querySelectorAll('.c');
     for(let c of classic){
     c.classList.toggle('bright')}
-    if (newChecbox.checked && classicChecbox.checked){
-      location.reload();
-      return false;
-    }
   })
 
 
