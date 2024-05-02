@@ -20,8 +20,8 @@ const sentOrderButton = document.querySelector('.API-getaway');
 sentOrderButton.addEventListener('click', sendOrder)
 
 //flatpick
-//const element = document.querySelector('.delivery-date')
-//flatpickr(element, {});
+const element = document.querySelector('.delivery-date')
+flatpickr(element, {});
 
 function sendOrder() {
   const thisCart = this;
