@@ -97,7 +97,7 @@ thisBooksList.filtersForm = document.querySelector('.filters');
     c.classList.toggle('bright')}
     if(!newChecbox.checked && !classicChecbox.checked
     )var sound = new Howl({
-      src: ['https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3'],
+      src: [''],
       volume: 4,
       onend: function () {
       }
